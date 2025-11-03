@@ -1,4 +1,4 @@
-# Template LaTeX - Tecsup
+# Tecsup - Template LaTeX
 
 Template personal en LaTeX para trabajos académicos.
 
