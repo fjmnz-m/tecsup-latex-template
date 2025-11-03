@@ -5,13 +5,17 @@ Template personal en LaTeX para trabajos académicos.
 ## Vista Previa
 
 ### Portada
-![Portada](main-1.jpg)
+![Portada](src/main-1.jpg)
+
+### Índice
+![Índice](src/main-2.jpg)
 
 ### Contenido
-![Página 2](main-2.jpg)
-![Página 3](main-3.jpg)
-![Página 4](main-4.jpg)
-![Página 5](main-5.jpg)
+![Página 3](src/main-3.jpg)
+![Página 4](src/main-4.jpg)
+
+### Bibliografía
+![Bibliografía](src/main-5.jpg)
 
 ## Uso
 
