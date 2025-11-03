@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{reff.bib}
+
+\addbibresource{reff.bib}
+
+\geometry{
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+\onehalfspacing{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue
+}
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	\vspace*{0.05cm}
+
+	\includegraphics[width=0.4\textwidth]{img/logo.png}\par
+	\vspace{0.3cm}
+
+	{\Large Departamento\par}
+	\vspace{0.3cm}
+
+	{\Large Carrera\par}
+	\vspace{0.5cm}
+
+	{\Large\bfseries{Título del Trabajo}\par}
+	\vspace{0.5cm}
+
+	{\Large\textbf{Curso:}\par}
+	{\Large Nombre del Curso\par}
+	\vspace{0.5cm}
+
+	\begin{flushleft}
+
+		{\large\textbf{Docente:}\par}
+		{\large Apellidos, Nombres\par}
+		\vspace{0.5cm}
+
+		{\large\textbf{Integrantes:}\par}
+		\vspace{0.3cm}
+
+		{\large
+			$\bullet$ Apellido1, Nombre1\\
+			$\bullet$ Apellido2, Nombre2\\
+			$\bullet$ Apellido3, Nombre3\\
+			$\bullet$ Apellido4, Nombre4
+			\par}
+		\vspace{0.5cm}
+
+		{\large\bfseries Sección:\par}
+		Código de Sección
+		\vspace{0.5cm}
+
+		{\large\bfseries Fecha de realización:\par}
+		DD/MM/AAAA
+		\vspace{0.5cm}
+
+		{\large\bfseries Fecha de entrega:\par}
+		DD/MM/AAAA
+
+		\vspace{0.5cm}
+
+	\end{flushleft}
+
+	{\large Ciudad, Perú\par}
+	{\large Mes Año\par}
+
+\end{titlepage}
+
+\newpage
+
+\pagestyle{fancy}
+\fancyhead[L]{Nombre del Curso}
+\fancyhead[C]{Título del Trabajo}
+\fancyhead[R]{\today}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\setlength{\headheight}{15pt}
+
+\pagenumbering{gobble}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\section{Introducción}
+
+\lipsum[2]
+
+\section{Desarrollo}
+
+\subsection{Primera subsección}
+
+\lipsum[1]
+
+\subsection{Segunda subsección}
+
+Ejemplo de cita \parencite{wikipedia_dijkstra}.
+
+\section{Conclusiones}
+
+\lipsum[1]
+
+\newpage
+\printbibliography[title={Referencias Bibliográficas}]
+
+\end{document}
